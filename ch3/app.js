@@ -40,17 +40,28 @@ const h1 = document.querySelector(".hello h1");  //querySelector는 첫 번째�
 // h1.addEventListener("mouseenter", handleMouseEnter);
 // h1.addEventListener("mouseleave", handleMouseLeave);
 
+// function handleTitleClick() {
+//     const currentColor = h1.style.color;
+//     let newColor;
+//     if (currentColor === "blue") {
+//         newColor = "tomato";
+//     } else {
+//         newColor = "blue";
+//     }
+//     h1.style.color = newColor;
+// }
+
+// h1.addEventListener("click", handleTitleClick);
+
 function handleTitleClick() {
-    const currentColor = h1.style.color;
-    let newColor;
-    if (currentColor === "blue") {
-        newColor = "tomato";
-    } else {
-        newColor = "blue";
-    }
-    h1.style.color = newColor;
+    //const clickedClass = "clicked";
+    // if (h1.classList.contains(clickedClass)) {
+    //     h1.classList.remove(clickedClass);
+    // } else {
+    //     h1.classList.add(clickedClass);
+    // }
+    h1.classList.toggle("clicked");
 }
 
 h1.addEventListener("click", handleTitleClick);
-
 
